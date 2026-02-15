@@ -110,13 +110,6 @@ Cybersecurity Graduate Student | Northeastern University
 Website: https://www.anveekshmrao.com  
 GitHub: https://github.com/anveeksh
 
-## Acknowledgments
-
-- MITRE Corporation for the ATT&CK framework
-- NetworkX development team for graph algorithms
-- Open-source security community for tools and methodologies
-- Academic research in automated penetration testing
-
 ## Citation
 
 If you use this tool in academic research, please cite:
