@@ -99,6 +99,44 @@ git remote set-url origin https://github.com/anveekshmrao/prompt-engineer-studio
 git push -u origin main
 ```
 
-## License
+# License
 
-MIT License (recommended for open-source use).
+MIT License - See LICENSE file for details
+
+## Developer
+
+**Anveeksh M Rao**  
+Cybersecurity Graduate Student | Northeastern University  
+Website: https://www.anveekshmrao.com  
+GitHub: https://github.com/anveeksh
+
+## Acknowledgments
+
+- MITRE Corporation for the ATT&CK framework
+- NetworkX development team for graph algorithms
+- Open-source security community for tools and methodologies
+- Academic research in automated penetration testing
+
+## Citation
+
+If you use this tool in academic research, please cite:
+```
+Rao, A.M. (2026). Attack Path Predictor: prompt-engineer-studio
+GitHub repository: https://github.com/anveeksh/prompt-engineer-studio
+```
+
+## Disclaimer
+
+This tool is provided "as is" without warranty of any kind. The authors are not responsible for any damage or legal consequences resulting from the use or misuse of this software. Always ensure you have proper authorization before conducting security testing.
+
+
+## Support
+
+For questions, issues, or feature requests:
+- Open an issue on GitHub
+- Contact: raoanveeksh@gmail.com 
+- Documentation: See README and code comments
+
+---
+
+Built with dedication for the cybersecurity community.
