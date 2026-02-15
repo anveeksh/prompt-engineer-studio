@@ -1,0 +1,251 @@
+:root {
+  --bg: #f5f3ef;
+  --ink: #1f2629;
+  --muted: #5a6a70;
+  --card: rgba(255, 255, 255, 0.82);
+  --line: rgba(31, 38, 41, 0.12);
+  --accent: #0d8276;
+  --accent-2: #f4b400;
+  --shadow: 0 16px 50px rgba(20, 37, 44, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Sora", "Avenir Next", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at 20% 15%, #e7f7f6 0%, rgba(231, 247, 246, 0) 42%),
+    radial-gradient(circle at 80% 84%, #fff0d6 0%, rgba(255, 240, 214, 0) 45%),
+    var(--bg);
+  color: var(--ink);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.bg-orb {
+  position: fixed;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  filter: blur(52px);
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.orb-one {
+  background: #8adfd8;
+  top: -120px;
+  left: -120px;
+}
+
+.orb-two {
+  background: #ffd27a;
+  right: -140px;
+  bottom: -120px;
+}
+
+.app-shell {
+  width: min(1080px, calc(100% - 2rem));
+  margin: 3rem auto;
+  display: grid;
+  gap: 1rem;
+  animation: rise 0.55s ease;
+}
+
+.hero h1 {
+  margin: 0.2rem 0 0.5rem;
+  font-size: clamp(1.8rem, 2.9vw, 2.9rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  margin: 0;
+  max-width: 72ch;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 1.1rem;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(8px);
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #2f393e;
+}
+
+.field-grid {
+  display: grid;
+  gap: 0.85rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.field.full {
+  grid-column: 1 / -1;
+}
+
+textarea {
+  width: 100%;
+  min-height: 150px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  padding: 0.9rem 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  resize: vertical;
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--ink);
+}
+
+select,
+input {
+  width: 100%;
+  min-height: 44px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  padding: 0.62rem 0.72rem;
+  font-family: inherit;
+  font-size: 0.96rem;
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--ink);
+}
+
+textarea.short {
+  min-height: 92px;
+}
+
+textarea:focus {
+  outline: 2px solid rgba(13, 130, 118, 0.35);
+  border-color: rgba(13, 130, 118, 0.55);
+}
+
+select:focus,
+input:focus {
+  outline: 2px solid rgba(13, 130, 118, 0.35);
+  border-color: rgba(13, 130, 118, 0.55);
+}
+
+.actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.64rem 1.1rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.primary {
+  background: linear-gradient(135deg, var(--accent), #0a6f63);
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(13, 130, 118, 0.3);
+}
+
+.ghost {
+  background: #fff;
+  color: var(--ink);
+  border: 1px solid var(--line);
+}
+
+.small {
+  padding: 0.42rem 0.85rem;
+  font-size: 0.84rem;
+}
+
+.output-card {
+  position: relative;
+}
+
+.output-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.inline-actions {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+
+.output-head h2 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background: rgba(255, 255, 255, 0.74);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem;
+  min-height: 280px;
+  line-height: 1.55;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  font-size: 0.94rem;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    margin: 1rem auto 2rem;
+    width: calc(100% - 1rem);
+  }
+
+  .card {
+    padding: 0.8rem;
+  }
+
+  .field-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+}

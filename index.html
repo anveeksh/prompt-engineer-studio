@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt Engineer Studio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-orb orb-one"></div>
+  <div class="bg-orb orb-two"></div>
+  <main class="app-shell">
+    <header class="hero">
+      <p class="eyebrow">Prompt Engineer Toolkit</p>
+      <h1>Create client-ready prompts with business-grade structure</h1>
+      <p class="subtitle">
+        Enter a rough idea and key business context. Generate a polished prompt with clear scope, requirements, delivery expectations, and success criteria.
+      </p>
+    </header>
+
+    <section class="card form-card">
+      <div class="field-grid">
+        <div class="field full">
+          <label for="rawPrompt" class="label">Rough request</label>
+          <textarea
+            id="rawPrompt"
+            placeholder="Example: I need a website for a finance company to publish quarterly financial reports"
+          ></textarea>
+        </div>
+
+        <div class="field">
+          <label for="projectType" class="label">Project Type</label>
+          <select id="projectType">
+            <option value="Website" selected>Website</option>
+            <option value="Landing Page">Landing Page</option>
+            <option value="Web Application">Web Application</option>
+            <option value="Dashboard">Dashboard</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="industry" class="label">Industry</label>
+          <select id="industry">
+            <option value="Auto">Auto detect</option>
+            <option value="Finance">Finance</option>
+            <option value="Healthcare">Healthcare</option>
+            <option value="SaaS">SaaS</option>
+            <option value="Education">Education</option>
+            <option value="E-commerce">E-commerce</option>
+            <option value="Real Estate">Real Estate</option>
+            <option value="General Business">General Business</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="audience" class="label">Target Audience</label>
+          <input id="audience" type="text" placeholder="CFOs, finance teams, and enterprise clients">
+        </div>
+
+        <div class="field">
+          <label for="tone" class="label">Writing Tone</label>
+          <select id="tone">
+            <option value="Executive and concise">Executive and concise</option>
+            <option value="Consultative and strategic">Consultative and strategic</option>
+            <option value="Technical and precise">Technical and precise</option>
+          </select>
+        </div>
+
+        <div class="field full">
+          <label for="goals" class="label">Business Goals</label>
+          <textarea id="goals" class="short" placeholder="Increase qualified leads, communicate trust, and improve report accessibility"></textarea>
+        </div>
+
+        <div class="field full">
+          <label for="mustHave" class="label">Must-have features (comma separated)</label>
+          <input id="mustHave" type="text" placeholder="Report archive, KPI dashboard, secure client portal, contact form">
+        </div>
+
+        <div class="field full">
+          <label for="constraints" class="label">Constraints / notes (optional)</label>
+          <textarea id="constraints" class="short" placeholder="Brand colors are navy and gold. Launch in 6 weeks."></textarea>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="enhanceBtn" class="btn primary">Generate Professional Prompt</button>
+        <button id="clearBtn" class="btn ghost">Reset</button>
+      </div>
+    </section>
+
+    <section class="card output-card">
+      <div class="output-head">
+        <h2>Client-ready Prompt</h2>
+        <div class="inline-actions">
+          <button id="copyBtn" class="btn ghost small">Copy</button>
+          <button id="downloadBtn" class="btn ghost small">Download .txt</button>
+        </div>
+      </div>
+      <pre id="enhancedPrompt">Your professional prompt will appear here.</pre>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
