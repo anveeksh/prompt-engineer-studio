@@ -1,19 +1,40 @@
 # Prompt Engineer Studio
 
-A professional web tool that converts rough client ideas into clear, structured, business-ready prompts.
+Prompt Engineer Studio is a professional web application that transforms rough, unclear user requests into detailed, business-ready prompts for AI tools.
 
-## What It Does
+## Why I Created This Software
 
-- Takes a simple raw request from the user.
-- Collects context such as project type, industry, audience, goals, and constraints.
-- Generates a polished prompt with:
-  - Strategic brief
-  - Detailed requirements
-  - Site/page blueprint
-  - Feature specifications
-  - Technical implementation plan
-  - QA and launch checklist
-- Supports copy-to-clipboard and `.txt` export.
+I built this software to solve a practical problem: most people know what they want, but they struggle to write clear prompts with proper structure, scope, and requirements.
+
+In client and business environments, low-quality prompts lead to low-quality AI output, rework, and confusion. This tool helps convert a basic idea into a clear execution prompt that teams can actually use.
+
+## What Is the Use of This Software?
+
+This software is useful for:
+
+- Prompt engineers who need consistent, high-quality prompts.
+- Founders and business owners who want to convert ideas into clear project briefs.
+- Agencies and freelancers preparing professional client-facing requirements.
+- Product teams that need structured AI-assisted planning.
+
+## Core Benefits
+
+- Converts rough text into structured professional prompts.
+- Captures business context (industry, audience, goals, constraints).
+- Produces clear sections for strategy, requirements, implementation, and QA.
+- Improves output quality and reduces repeated back-and-forth.
+- Supports one-click copy and `.txt` export.
+
+## Features
+
+- Rough request input
+- Project type selection
+- Industry auto-detection/manual selection
+- Audience and tone configuration
+- Business goals and constraints input
+- Must-have feature capture
+- Professional prompt generation
+- Copy and download output
 
 ## Tech Stack
 
@@ -21,7 +42,7 @@ A professional web tool that converts rough client ideas into clear, structured,
 - CSS3
 - Vanilla JavaScript
 
-## Project Structure
+## Folder Structure
 
 ```text
 .
@@ -34,10 +55,9 @@ A professional web tool that converts rough client ideas into clear, structured,
 
 ## Run Locally
 
-1. Clone or download this repository.
-2. Open `index.html` in your browser.
+1. Open `index.html` directly in your browser.
 
-Optional (recommended):
+Or run a local server:
 
 ```bash
 python3 -m http.server 8080
@@ -45,32 +65,40 @@ python3 -m http.server 8080
 
 Then open `http://localhost:8080`.
 
-## GitHub Setup
+## Author Information
+
+- Name: Anveeksh M Rao
+- Role: Prompt Engineer / Developer
+- GitHub: [anveekshmrao](https://github.com/anveeksh)
+- Email: your-email@example.com
+- LinkedIn: https://www.linkedin.com/in/anveekshmrao/
+
+Note: Update email and LinkedIn with your real details before sharing publicly.
+
+## Suggested GitHub Repository Details
+
+- Repository name: `prompt-engineer-studio`
+- Description: `Professional web app that converts rough ideas into structured, business-ready AI prompts.`
+- Topics: `prompt-engineering`, `ai-tools`, `javascript`, `frontend`, `web-app`, `productivity`
+
+## Push to GitHub (Copy-Paste)
 
 ```bash
 cd "/Users/anveekshmrao/Documents/New project"
 git add .
 git commit -m "Initial commit: Prompt Engineer Studio"
 git branch -M main
-git remote add origin https://github.com/<your-username>/prompt-engineer-studio.git
+git remote add origin https://github.com/anveekshm/prompt-engineer-studio.git
 git push -u origin main
 ```
 
-If `origin` already exists:
+If remote already exists:
 
 ```bash
-git remote set-url origin https://github.com/<your-username>/prompt-engineer-studio.git
+git remote set-url origin https://github.com/anveekshmrao/prompt-engineer-studio.git
 git push -u origin main
 ```
-
-## Suggested Repository Metadata
-
-- Repository name: `prompt-engineer-studio`
-- Short description: `Business-grade prompt generator that turns rough requests into structured professional briefs.`
-- Topics: `prompt-engineering`, `ai-tools`, `productivity`, `javascript`, `frontend`, `web-app`
-- Visibility: Public (for portfolio) or Private (for client/internal use)
 
 ## License
 
-Use MIT License if you want open reuse, or keep private/proprietary for client work.
-# prompt-engineer-studio
+MIT License (recommended for open-source use).
