@@ -70,7 +70,7 @@ Then open `http://localhost:8080`.
 - Name: Anveeksh M Rao
 - Role: Prompt Engineer / Developer
 - GitHub: [anveekshmrao](https://github.com/anveeksh)
-- Email: your-email@example.com
+- Email: er.anveekshrao@example.com
 - LinkedIn: https://www.linkedin.com/in/anveekshmrao/
 
 Note: Update email and LinkedIn with your real details before sharing publicly.
